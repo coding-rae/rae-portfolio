@@ -1,0 +1,408 @@
+/*Each element is presented as it appears on page in both light and dark, respectively*/
+
+/*Background of page*/
+.bg-light{
+    background-color: rgb(226,195,184);
+}
+.bg-dark {
+    background-color: #000000;
+}
+
+/*Header and paragraph elements*/
+
+.bg-light h1 {
+    font-size: 5vw;
+    text-align: left;
+    color: white;
+    font-family: 'Dancing Script';
+}
+
+
+.bg-light h2{
+    font-size: 4vw;
+    text-align: center;
+    height: 1vw; 
+    color: white;
+    font-family: 'Ibarra Real Nova', 'Times New Roman', Times, serif;
+
+}
+.bg-light h3{
+    color: white;
+    font-size: 3vw;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Ibarra Real Nova', 'Times New Roman', Times, serif;
+}
+.bg-light h4{
+    color: white;
+    font-size: 5vw;
+    text-transform: capitalize;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+
+}
+
+.bg-light p {
+    font-size: 1vw;
+    color:white;
+
+}
+
+.bg-dark h1 {
+    color: whitesmoke;
+    font-size: 5vw;
+}
+
+.bg-dark h2{
+    font-size: 4vw;
+    text-align: center;
+    height: 1vw; 
+    color: white;
+    font-family: 'Ibarra Real Nova', 'Times New Roman', Times, serif;
+
+}
+
+.bg-dark h3{
+    color: white;
+    font-size: 3vw;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Ibarra Real Nova', 'Times New Roman', Times, serif;
+}
+
+.bg-dark h4{
+    color: white;
+    font-size: 5vw;
+    text-transform: capitalize;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+
+}
+.bg-dark p {
+    font-size: 1vw;
+    color:white;
+
+}
+
+/*page breaks*/
+br{
+    display: block;
+    margin: 5px 0;
+    line-height: 5px;
+} 
+
+
+/*Nav bar*/
+
+.nav-item{
+
+}
+
+.navbar-nav{
+    
+}
+/*Styling for Top Nav bar*/
+.bg-light #navbar-fixed-top {
+    display: none;
+}
+
+
+/*Header*/
+
+
+
+/*Introduction*/
+
+.bg-light #mainImg  picture {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/*Portfolio*/
+
+/*Styling for Portfolio Flex box*/
+.bg-light .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vw;
+    padding: 8px;
+    border: dashed 4px white;
+    background: white;
+
+}
+.bg-light #portfolio {
+    display: flex;
+    padding: 4px;
+    color: black;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    font-size: 5vw;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+.bg-dark .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vw;
+    padding: 8px;
+    border: dashed 4px white;
+    background: white;
+
+}
+.bg-dark #portfolio {
+    display: flex;
+    padding: 4px;
+    color: black;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    font-size: 5vw;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+/*Skills list*/
+
+.bg-light ul{
+    background-color: rgb(226,195,184);
+    border: none;
+}
+
+
+.bg-dark ul{
+    background-color: #000000;
+    border: none;
+
+}
+
+
+/*Skills list button*/
+.bg-light #listButton {
+    border-radius: 25px;
+    border: none;
+    background:  rgb(250, 234, 215);
+    padding:6px 10px; 
+    width: 30vw;
+    height: 6vw;
+    text-align: center;
+    font-size: 3vw; 
+    font-family: 'Dancing Script';
+    color: rgb(226,195,184);
+}
+
+.bg-dark #listButton {
+    background-color: greenyellow; 
+    color: black;
+    border-radius: 26px;
+    border: none;
+    padding: 6px 10px; 
+    width: 30vw;
+    height: 6vw;
+    text-align: center;
+    font-size: 3vw; 
+    font-family: 'Dancing Script';
+}
+
+
+/*Contact Form*/
+.bg-light #contact {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.bg-light #form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.bg-light .contact-item{
+    font-family: 'Ibarra Real Nova';
+    color: white;
+    font-style: italic;
+    font-size: 2vw;
+}
+.bg-light .contact-p {
+    font-size: 3vw;
+    font-family: 'Ibarra Real Nova';
+    font-style: italic;
+
+}
+
+.bg-dark .contact-p {
+    font-size: 3vw;
+    font-family: 'Ibarra Real Nova';
+    font-style: italic;
+}
+
+
+/*Styling for Submit button*/
+
+.bg-light input[type=submit]{
+    background-color:rgba(240, 238, 236, 0.963);
+    padding: 6px 10px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+/*For Submit button in hover state*/
+.bg-light input[type=submit]:hover{
+    background-color: rosybrown ;
+}
+
+.bg-dark input[type=submit]{
+    background-color: greenyellow;
+    color: black;
+    padding: 6px 10px;
+    border:none;
+    border-radius: 28px;
+    cursor:pointer;
+}
+.bg-dark input[type=submit]:hover{
+    background-color: mediumspringgreen;
+}
+
+/*Footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*Styling for unordered list*/
+
+
+.bg-light ul.skill-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    background-color: rgba(240, 238, 236, 0.963);
+    border: solid 2px white;
+    font-family: 'Nanum Gothic', sans-serif;
+        display: none;
+}
+.bg-light ul.skill-list > li:before {
+    display: inline-block;
+    content: "~";
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+/* Styling for light / dark mode toggle*/
+
+/*Styling for Toggle button*/
+.bg-light .nav-bar-left{
+list-style: none;
+margin-right: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(198, 230, 243);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(230, 196, 225);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+input:checked + .slider {
+    background-color: greenyellow;
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: black;
+  }
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+  }
+  
+.slider.round:before {
+    border-radius: 50%;
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling for dark mode toggle*/
+
+/*
+    *{
+        color: white;
+    }
+
+    
+
+
+
+
+
+
+
+

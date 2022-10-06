@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head - the invisible code for search engines-->
+<head>
+    <meta charset="utf-8">
+    <title>RAEs - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="icon" type="image/x-icon" href="/rae-7.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+
+
+    
+    <link rel="stylesheet" href="/style.css">
+    <script src="/interactive.js"></script>
+
+</head>
+
+    <!--Body - the visible code-->
+<body>
+<div class=" bg-light main-body">
+
+<!--         Vertical Nav bar
+        <nav class="navbar navbar-fixed-top justify-content-center" role="navigation">
+            <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" style="background-color: #f3e1c8;" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar" style="background-color: white;"></span>
+                    <span class="icon-bar" style="background-color: white;"></span>
+                    <span class="icon-bar" style="background-color: white;"></span>
+                </button>
+            </div>
+        Below are the links that appear in the collapsable navbar on smaller screen devices 
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rebekah Edwards | Junior Software Engineer</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolioHeader">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources/CV - Jacob Edwards.pdf">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+ -->
+
+    <!--Add header nav that has pages to About, Projects(github link + project descriptions (laid out like CV experience), CV-->
+<!-- 
+
+    <div class="main-content">
+        <div class="list-container">
+        <ul class="text-color-light social-media">
+        <li><i class="fa-brands fa-github"></i></li>
+        <li><i class="fa-brands fa-codepen"></i></li>
+        <li><i class="fa-brands fa-linkedin-in"></i></li>
+        <li><i class="fa-brands fa-medium"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+        </div>
+        </div>
+ -->
+
+        <header>
+            <h1>Rebekah Edwards' Portfolio</h1>
+        <!--Toggle button for light / dark mode
+
+            <ul class="navbar-buttons">
+                <li class="navbar-buttons-text btn-type">Light/Dark Mode</li>
+                <li class="navbar-buttons-text btn-logo"><em class="fa-solid fa-sun"></em></li>
+                <li>
+                <label class="switch">
+                <input type="checkbox">
+                <span onclick="toggleModeButton()" class="slider round"></span>
+                </label>
+                </li>
+            </ul>
+        </header>
+
+        <hr style="width: 90%;" color="white">
+
+-->
+    <!--Main introduction-->
+        <main>
+
+        <div>
+            <section>
+            
+            <!--replace with pic of me-->
+        
+
+        <div id='mainImg'>
+            <picture>
+                <img src="./rae-3.png" alt="RAE Logo" height="60%" width="50%">
+            </picture>
+        </div>
+
+            <h2>Hi, I'm Rebekah Edwards</h2> <br>
+            <h3><strong>Welcome to my Front-End Developer Portfolio</strong></h3>
+        
+        <!--Add link icons to github, LinkdIn & CV -->
+        </section>
+        </div>
+    
+    <br>
+    <br>
+
+    <!--Portfolio flex box-->
+
+    <section class="box">
+    <!--Hyperlink 'here' to page with projects-->
+
+    <strong><h4 id="portfolio"> Portfolio</h4></strong>
+
+    <hr style="width:30%;" color="black">
+
+    </section>
+
+    <br>
+    <br>
+
+    <!--Skills so far in toggle button-->
+        <section>
+        <button  att="button" onclick="toggleList()" id="listButton">See my skills so far</button>
+        <div id="skillList">
+            <ul class="skill-list">
+                <li> Write HTML using Tags, elements, declarations, properties, property values, content, comments and browser compatability. </li>
+                <br> 
+                <li>Use Layout &lt!DOCTYPE html&gt, &lthtml lang&gt, &lthead for non visual e.g metadata, &ltmeta charset&gt, &lttitle&gt</li>
+                <br>
+                <li>Use semantics like &ltbody&gt, &ltheader&gt, &ltfooter&gt, &ltnav&gt, &ltmain&gt, &ltsection&gt... for visuals as well as non semantic block level containers e.g &ltdiv&gt and inline ones like &ltspan&gt </li>
+                <br>
+                <li> Style code using External CSS&ltlink rel&gt, internal style, inline attributes and simple selectors</li>
+                <br>
+                <li>Use Responsive Web Design with &ltviewport&gt, universal selectors, {indentation} and nesting</li>
+                <br>
+                <li>Utilise formatting like <strong>&ltstrong&gt</strong>, <em>&ltem&gt</em>, <b>&ltb&gt</b>, <i>&lti&gt</i> and insert <b>&ltimg&gt,&ltaudio&gt and &ltvideo&gt</b></li>
+                <br>
+                <li>Consider and implement Security, accessibility, testing, standards, documentation, style guides, SEO, color theory and design thinking</li>
+                <br>
+                <li>Use Git commands like git init, git status, git add, git commit, git remote and push to Github</li>
+            </ul>
+
+        </div>
+        </section>
+        
+
+
+        </main>
+
+        
+        <!-- Container (Contact section)-->
+        <div id="contact" class="container-fluid-text-center">
+    <!--Add ::before here-->
+        <h4 class="contact">Contact</h4>
+        <hr style="width: 30%;" color="white">
+
+
+
+        <br>
+        <div class="row"></div>
+    <!--Add ::before here-->
+        <div class="contact-info text-center">
+            <!-- Add image-->
+
+        
+        <p class="contact-p">I'm always open to meet new people and work on cool projects.</p> 
+        <p class="contact-p">Want to have a chat, or work together on something?</p>
+        <p class="contact-item"> 
+            <span class="glyphicon glyphicon-map-marker">
+                <!--Add ::before here-->
+                Birmingham, UK
+            </span>
+        </p>
+        <p class="contact-item"> 
+            <span class="glyphicon glyphicon-map-envelope">
+                <!--Add ::before here-->
+            </span>
+            raedwards93@gmail.com
+        </p>
+        </div>
+        <!--Add ::after here-->
+        </div>
+        <br>
+        <div class="row">
+        <!--Add ::before here-->
+        <div class="form">
+            <form action="mailto:raedwards93@gmail.com" method="post" enctype="text/plain"></form>
+            <form>
+                <label class="contact-item" for="name"></label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <br>
+                <label class="contact-item" for="email"></label>
+                <br>
+                <input type="text" id="email" name="email" placeholder="Your email">
+                <br>
+                <label class="contact-item" for="message"></label>
+                <br>
+                <textarea id="message" name="message" placeholder="" rows="5">
+                </textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+</div>
+</body>
+
+<footer>
+    <p><a href="#body" id="access_top" class="access_aid">Skip to top</a></p>
+</footer>
+
+<!--Add footer nav that links back to About, Projects, CV pages-->
+</html>
