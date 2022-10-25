@@ -1,0 +1,8 @@
+{
+  "name": "RAE-Portolio",
+  "description": "Rebekah Edwards' Developer Portfolio",
+  "version": "16.16.0",
+  "engines": {
+    "node": "18.x"
+  }
+}
