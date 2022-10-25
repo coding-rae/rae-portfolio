@@ -104,17 +104,123 @@ br{
     display: none;
 }
 
+.bg-dark #navbar-fixed-top{
+    display: none;
+
+}
 
 /*Header*/
 
+/* Styling for light / dark mode toggle*/
+
+/*Styling for Toggle button
+.bg-light .nav-bar-left{
+list-style: none;
+margin-right: 20px;
+}
+*/
+
+/*Text */
+
+.bg-light .navbar-buttons-text{
+    color: #000000;
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+    align-self: center;
+  }
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider - Need to change below 'input:checked' to correspond with bg-dark - currently needs to be toggled twice */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(198, 230, 243);
+    -webkit-transition: .4s;
+    transition: .4s;
+    align-items: center;
+  }
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(230, 196, 225);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+input:checked + .slider {
+    background-color: greenyellow;
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: black;
+  }
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 22px;
+  }
+  
+.slider.round:before {
+    border-radius: 50%;
+  }
+ 
 
 
-/*Introduction*/
+/* Styling for dark mode toggle*/
+
+ .bg-dark .navbar-buttons-text {
+    color: antiquewhite;
+    font-family: 'Dancing Script';
+    text-align: center;
+ }
+/*
+    *{
+        color: white;
+    }
+
+    
+
+*/
+
+/*Introduction image*/
 
 .bg-light #mainImg  picture {
     display: flex;
     justify-content: center;
 
+}
+
+.bg-dark #mainImg picture{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -140,6 +246,7 @@ br{
     text-transform: capitalize;
     justify-content: center;
 }
+
 
 .bg-dark .box{
     display: flex;
@@ -229,6 +336,24 @@ br{
 
 }
 
+
+.bg-dark #contact {
+    font-size: 3vw;
+    text-align: center;
+}
+.bg-dark #form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.bg-dark .contact-item {
+    font-family: 'Ibarra Real Nova';
+    color: white;
+    font-style: italic;
+    font-size: 2vw;
+}
+
 .bg-dark .contact-p {
     font-size: 3vw;
     font-family: 'Ibarra Real Nova';
@@ -276,7 +401,7 @@ br{
 
 
 
-/*Styling for unordered list*/
+/*Styling for unordered Skill list*/
 
 
 .bg-light ul.skill-list {
@@ -295,114 +420,43 @@ br{
     margin-left: -1em;
 }
 
-
-/* Styling for light / dark mode toggle*/
-
-/*Styling for Toggle button*/
-.bg-light .nav-bar-left{
-list-style: none;
-margin-right: 20px;
+.bg-dark ul.skill-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 2px black;
+    font-family: 'Nanum Gothic', sans-serif;
+        display: none;
+    color: #ffffff;
+}
+.bg-dark ul.skill-list > li::before{
+    display: inline-block;
+    content: "~";
+    width: 1em;
+    margin-left: -1em;
 }
 
-/* The switch - the box around the slider */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
 
-/* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
+/*.dark-main-img {
+    display: none;
+}*/
 
-  /* The slider */
-.slider {
+
+
+
+
+
+
+/*Styling for light/dark mode button position */ 
+.nav-line {
+    list-style: none;
+}
+
+.navbar-buttons {
     position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(198, 230, 243);
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
+    right: 3%;
+    font-size: 1.5vw
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: rgb(230, 196, 225);
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-
-input:checked + .slider {
-    background-color: greenyellow;
-  }
-  
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-input:checked + .slider:before {
-    transform: translateX(26px);
-    background-color: black;
-  }
-  
-  /* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-  }
-  
-.slider.round:before {
-    border-radius: 50%;
-  }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Styling for dark mode toggle*/
-
-/*
-    *{
-        color: white;
-    }
-
-    
-
-
-
-
-
-
-
+}
 

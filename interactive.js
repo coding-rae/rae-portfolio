@@ -1,4 +1,18 @@
-/*Styling for skills list toggle*/
+/* standard jquery format:
+
+$("selector").method();
+
+*/
+
+/*$(document).ready(function() {
+    // all custom jQuery will go here
+)}
+*/
+
+
+
+
+/*Function for skills list toggle*/
 
 function toggleList() {
     //get the list
@@ -25,6 +39,8 @@ function toggleList() {
         }
 }
 
+
+/* Function for Light/Dark Mode Toggle button */
 function toggleModeButton(){
 const checkbox = document.querySelector("input[type='checkbox']");
 
@@ -42,6 +58,14 @@ const logo_list = document.querySelector(".btn-logo");
 
 const header_one = document.querySelectorAll("h1");
 
+let main_img = document.querySelectorAll("main-img");
+
+let toggle = false; 
+
+
+
+
+
 checkbox.addEventListener("click", () => {
 
 body.classList.toggle("bg-dark");
@@ -56,11 +80,13 @@ logo.classList.toggle("text-color-dark");
 
 header_one.classList.toggle("h1-dark");
 
+
 if (checkbox.checked) {
 logo.classList.remove("fa-sun");
 logo.classList.add("fa-moon");
 button_text.textContent = "Dark Mode";
 } 
+
 else {
 logo.classList.remove("fa-moon");
 logo.classList.add("fa-sun");
@@ -68,10 +94,6 @@ button_text.textContent = "Light Mode";
 }
 });
 }
-
-
-
-
 
 /* 
 // Top nav button
